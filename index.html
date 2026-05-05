@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AppTester</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #0d1b2a, #1b263b);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.rating {
+  margin: 10px 0;
+  color: orange;
+}
+
+.progress {
+  height: 6px;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 33%;
+  height: 100%;
+  background: orange;
+}
+
+.headline {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.sub {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.option {
+  background: #1b263b;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #2a3c5a;
+}
+
+.cta {
+  background: orange;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">AppTester</div>
+
+<div class="rating">★★★★★ 4.8/5 (2,347 Bewertungen)</div>
+
+<div class="progress">
+  <div class="progress-bar"></div>
+</div>
+
+<div class="sub">Aktuell viele offene Aufgaben verfügbar</div>
+
+<div class="headline">
+Ich habe 12 Nebenverdienst-Apps getestet – das hat bei mir am besten funktioniert
+</div>
+
+<div class="sub">
+Verdiene je nach Aktivität zusätzlich Geld mit deinem Handy
+</div>
+
+<div class="option" onclick="goToOffer()">
+⭐ Spiele testen (empfohlen)
+</div>
+
+<div class="option" onclick="goToOffer()">
+Umfragen beantworten
+</div>
+
+<div class="option" onclick="goToOffer()">
+Videos ansehen
+</div>
+
+<div class="option" onclick="goToOffer()">
+Apps testen
+</div>
+
+<div class="cta" onclick="goToOffer()">
+Jetzt starten & erste Aufgabe freischalten
+</div>
+
+<div class="footer">
+Über 12.000 Nutzer in Deutschland nutzen diese Methode bereits<br><br>
+Ergebnisse können variieren
+</div>
+
+</div>
+
+<script>
+function goToOffer() {
+  window.location.href = "https://YOUR-OFFER-LINK-HERE";
+}
+</script>
+
+</body>
+</html>
