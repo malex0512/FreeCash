@@ -4,10 +4,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#06090f">
 <title>FreeCash – Exclusive Rewards</title>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+html{background:#06090f !important;color-scheme:dark;}
 
 :root{
 –bg:#06090f;
@@ -29,7 +33,8 @@
 
 html,body{
 min-height:100vh;
-background:var(–bg);
+background:#06090f !important;
+background-color:#06090f !important;
 font-family:‘DM Sans’,sans-serif;
 color:var(–text);
 display:flex;flex-direction:column;align-items:center;
@@ -49,7 +54,8 @@ pointer-events:none;z-index:0;
 /* ═══ ELIGIBILITY LOADING SCREEN ═══ */
 #eligScreen{
 position:fixed;inset:0;
-background:var(–bg);
+background:#06090f;
+background-color:#06090f;
 z-index:9999;
 display:none;
 flex-direction:column;
@@ -537,7 +543,7 @@ footer{margin-top:36px;text-align:center;padding:0 24px;}
 
 <!-- ═══ ELIGIBILITY LOADING SCREEN ═══ -->
 
-<div id="eligScreen">
+<div id="eligScreen" style="opacity:0;visibility:hidden;">
   <div class="elig-logo">
     <img src="data:image/png;base64,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" alt="FreeCash">
   </div>
@@ -790,6 +796,7 @@ function selectEarning(btn) {
       window.scrollTo({top: 0, behavior: 'smooth'});
 
       var eligScreen = document.getElementById('eligScreen');
+      eligScreen.style.visibility = 'visible';
       eligScreen.style.opacity = '1';
       eligScreen.style.display = 'flex';
 
@@ -798,6 +805,7 @@ function selectEarning(btn) {
         eligScreen.style.opacity = '0';
         setTimeout(function() {
           eligScreen.style.display = 'none';
+          eligScreen.style.visibility = 'hidden';
           document.getElementById('finalSection').classList.add('active');
           window.scrollTo({top: 0, behavior: 'smooth'});
         }, 460);
